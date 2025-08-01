@@ -122,8 +122,8 @@ Each delivery has a **"Print Label"** button which opens a print-ready layout. O
 ## 🧑‍💻 Author
 
 Developed by **\[Your Name]**
-🔗 [yourwebsite.com](https://yourwebsite.com)
-📧 [your@email.com](mailto:your@email.com)
+🔗 [EngrIlyas.com](https://www.linkedin.com/in/ilyas02828/)
+📧 [Ilyas02828@gmail.com](mailto:Ilyas02828@gmail.com)
 
 ---
 
