@@ -1,83 +1,146 @@
-**📅 Meeting Management System**
+# 🚚 Laravel Delivery Management System
 
-A web-based application to streamline and manage meeting minutes, attendance, and follow-up actions. Built with Laravel and MySQL, this system helps teams document, assign, and track meeting outcomes efficiently.
+A Laravel-powered Delivery Management System to manage and track parcel deliveries, generate shipping labels with QR codes, and keep sender/receiver information organized. Designed for logistics teams and courier businesses who need a seamless delivery workflow.
 
-**🚀 Features**
+![Screenshot](https://your-screenshot-url.com) <!-- Optional image link -->
 
-📝 Create & Edit Meetings
-Schedule new meetings and edit existing ones.
+---
 
-**👥 User Roles & Permissions**
+## 📦 Key Features
 
-Role-based access control (SuperAdmin, Admin, Staff, Viewer).
+- 📋 Full CRUD for Deliveries
+- 🏷️ Printable Labels with Barcode + QR Code
+- 🚚 Real-time Delivery Status Tracking
+- 📍 Pickup and Drop-off Address Management
+- 🧾 Auto Print-Friendly Label Layout
+- 🧑‍💼 Sender & Receiver Info Capture
+- 💳 Payment Modes + COD Price Display
+- 🛡️ Role-Based Access (Spatie Permissions)
+- 📱 Fully Responsive UI (Mobile + Tablet Friendly)
 
-**📋 Meeting Agendas & Minutes**
+---
 
-Add agendas, meeting points, and summaries.
+## ⚙️ Tech Stack
 
-**✅ Action Items & Follow-ups**
+- **Laravel 11** (PHP 8.2+)
+- **Blade Templates**
+- **Bootstrap 5**
+- **MySQL Database**
+- **Spatie Laravel Permission**
+- **JsBarcode & Laravel QRCode for Labeling**
+- **HTML, CSS, JS**
 
-Assign responsibilities and track completion.
+---
 
-**🔍 Search & Filter**
+## 🚀 Getting Started
 
-Easily search and filter meetings by date, title, or creator.
+### 1. Clone the Repository
 
+```bash
+git clone https://github.com/yourusername/deliverysystem.git
+cd deliverysystem
+````
 
-**🛠️ Tech Stack**
+### 2. Install Dependencies
 
-Backend: Laravel 11.x (PHP)
-
-Frontend: Blade, Bootstrap, jQuery
-
-Database: MySQL
-
-Authentication: Laravel Breeze/Sanctum (or your preferred method)
-
-Roles & Permissions: Spatie Laravel-Permission
-
-**📦 Installation**
-
-Clone the repo:
-git clone https://github.com/Ilyas02828/Meeting.git
-cd Meeting
-Install dependencies:
-
+```bash
 composer install
-npm install && npm run dev
-Set up .env:
+npm install && npm run build
+```
 
+### 3. Environment Setup
+
+Copy the `.env` example file and generate your application key:
+
+```bash
 cp .env.example .env
 php artisan key:generate
-Configure database in .env, then run:
+```
 
+Update your `.env` with your database credentials:
+
+```
+DB_DATABASE=your_db
+DB_USERNAME=your_user
+DB_PASSWORD=your_pass
+```
+
+### 4. Run Migrations and Seeders
+
+```bash
 php artisan migrate --seed
-Start the server:
+```
 
+### 5. Start the Development Server
 
+```bash
 php artisan serve
-👤 User Roles (Seeded)
-Role	Default Email	Password
-super Admin	Ilyas02828@gmail.com	12345678
-Admin	admin@gmail.com	12345678
-Staff	emp1@gmail.com	12345678
+```
+
+Visit: `http://localhost:8000`
+
+---
+
+## 🔒 Roles & Permissions
+
+* **Super Admin** – Full Access
+* **Admin** – Manage Deliveries & Users
+* **Employee** – View & Print Assigned Deliveries
+
+Manage roles using the `Spatie/laravel-permission` package.
+
+---
+
+## 🖨️ Printing Labels
+
+Each delivery has a **"Print Label"** button which opens a print-ready layout. Only the label section is printed without sidebar or header.
+
+> ✅ Auto-centering
+> ✅ Barcode & QR Code included
+> ✅ Size optimized for sticky label sheets
+
+---
+
+## 📁 Folder Structure Overview
+
+* `/app/Models/Delivery.php` – Eloquent Model
+* `/resources/views/deliveries/` – Blade Views (index, show, label-print)
+* `/routes/web.php` – Routes
+* `/app/Http/Controllers/DeliveryController.php` – CRUD logic
+
+---
+
+## 🛠 Future Enhancements
+
+* SMS notifications on delivery status
+* Real-time delivery tracking map
+* API for mobile app integration
+* Export labels as PDF
+
+---
+
+## 🧑‍💻 Author
+
+Developed by **\[Your Name]**
+🔗 [yourwebsite.com](https://yourwebsite.com)
+📧 [your@email.com](mailto:your@email.com)
+
+---
+
+## 📢 Contributing
+
+PRs and issues are welcome! Please fork the repo and submit your improvements.
+
+---
+
+## 🌐 License
+
+This project is open-source under the [MIT License](LICENSE).
+
+---
+
+## 🔗 Hashtags
+
+**#Laravel #PHP #DeliverySystem #PackageTracking #Logistics #OpenSource #ProductivityTool #WebApp #MySQL #AdminPanel #SpatiePermissions #CRUD #BarcodeLabel #QRCode #LaravelDeveloper #PHPDeveloper #BladeTemplates #Bootstrap #PrintFriendly #DevTools #ShippingLabel #CourierSystem**
 
 
-**📷 Screenshots**
-![image](https://github.com/user-attachments/assets/bb3b903b-d400-479b-a6ce-b5608d0715c5)
-![image](https://github.com/user-attachments/assets/62a73ad7-6465-4e5b-9798-9fef89324316)
-![image](https://github.com/user-attachments/assets/848f7ea8-5bb5-48e6-bcf2-74a3acbc42e8)
-![image](https://github.com/user-attachments/assets/a9447c47-2ce7-4f46-be3b-877cd8b9aff6)
-![image](https://github.com/user-attachments/assets/281a2468-0ed1-4274-a25a-6de930abdeee)
-![image](https://github.com/user-attachments/assets/91610be3-2d4d-48a9-bb7a-4ab14969f993)
-
-
-
-
-
-
-
-
-
-**#Laravel #PHP #MeetingMinutes #MeetingManagement #OpenSource #ProductivityTool #WebApp #MySQL #AdminPanel #TaskTracking #SpatiePermissions #CollaborationTool #ProjectManagement #LaravelDeveloper #PHPDeveloper #BladeTemplates #Bootstrap #CRUD #DigitalMeetings #DevTools
-**
